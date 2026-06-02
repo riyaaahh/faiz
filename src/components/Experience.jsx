@@ -28,19 +28,19 @@ export default function WorkExperience() {
                 <GlowCard className="flex h-full flex-col items-center p-6 text-center">
                   <motion.div
                     whileHover={{ scale: 1.08 }}
-                    className={`mb-4 flex h-20 w-full items-center justify-center overflow-hidden rounded-xl px-4 ${
+                    className={`mb-4 flex h-24 w-full items-center justify-center overflow-hidden rounded-xl px-3 ${
                       company.logoBg === "light"
                         ? "bg-white"
                         : company.logoBg === "dark"
                           ? "bg-black"
-                          : "bg-gradient-to-br from-accent/20 to-accent-2/10"
+                          : "bg-gradient-to-br from-white/10 to-white/5"
                     }`}
                   >
                     {company.logo ? (
                       <img
                         src={company.logo}
                         alt={`${company.name} logo`}
-                        className="max-h-14 w-full object-contain"
+                        className="max-h-[4.5rem] w-full object-contain"
                       />
                     ) : (
                       <div className="flex flex-col items-center gap-1">

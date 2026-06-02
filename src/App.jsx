@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import ScrollProgress from "./components/ScrollProgress";
 import AnimatedBackground from "./components/AnimatedBackground";
 import Hero from "./components/Hero";
+import Spotlight from "./components/Spotlight";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import WorkExperience from "./components/Experience";
@@ -16,6 +17,7 @@ export default function App() {
       <Navbar />
       <main>
         <Hero />
+        <Spotlight />
         <About />
         <Skills />
         <WorkExperience />

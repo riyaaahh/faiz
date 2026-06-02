@@ -18,6 +18,7 @@ export const profile = {
   images: {
     hero: "/images/faiz-hero.png",
     about: "/images/faiz-about.png",
+    lifestyle: "/images/faiz-lifestyle.png",
   },
 };
 
@@ -80,24 +81,108 @@ export const strengths = [
   "Delivers on tight deadlines without cutting corners",
 ];
 
+export const tools = [
+  "Meta Ads",
+  "Google Ads",
+  "Google Analytics",
+  "Google Search Console",
+  "Google Business Profile",
+  "Semrush",
+  "HubSpot",
+  "WordPress",
+  "Canva",
+  "Photoshop",
+  "Email Marketing",
+  "Keyword Research",
+];
+
+export const technicalSkills = [
+  {
+    title: "SEO (On‑Page & Off‑Page)",
+    description:
+      "Optimising pages for search visibility — from keywords and content structure to internal linking, backlink support, and overall site relevance.",
+  },
+  {
+    title: "Local SEO & Google Business Profile",
+    description:
+      "Improving map visibility through Google Business Profile optimisation, accurate updates, review posting/management, and local trust signals.",
+  },
+  {
+    title: "Keyword Research & Competitor Analysis",
+    description:
+      "Finding high-intent search opportunities and analysing competitors to plan content and campaigns that can realistically win traffic.",
+  },
+  {
+    title: "Meta Ads (Campaign Setup & Optimisation)",
+    description:
+      "Building and monitoring live campaigns — audience targeting, creative testing, budget control, and iteration based on performance signals.",
+  },
+  {
+    title: "Google Ads (Search & Lead Focused)",
+    description:
+      "Planning campaigns for lead generation with practical tracking and optimisation — keeping intent, cost, and results aligned.",
+  },
+  {
+    title: "Content Planning & Creation",
+    description:
+      "Creating posts, reels, stories, and blogs with a clear strategy — brand consistency, audience relevance, and performance-led storytelling.",
+  },
+  {
+    title: "Copywriting (Ads, Captions, Emails)",
+    description:
+      "Writing clear, persuasive copy — headlines, CTAs, ad text, captions, and email content designed to drive clicks and action.",
+  },
+  {
+    title: "Backlink Building & Analysis",
+    description:
+      "Supporting SEO with outreach, guest posting, directory submissions, and backlink checks to strengthen authority over time.",
+  },
+  {
+    title: "Google Search Console",
+    description:
+      "Monitoring search performance and spotting quick wins using query data, indexing insights, and page-level improvements.",
+  },
+  {
+    title: "Analytics & Reporting (Google Analytics)",
+    description:
+      "Tracking performance and turning numbers into decisions — basic reporting, pattern spotting, and actionable insights for next steps.",
+  },
+  {
+    title: "Lead Generation & Funnel Support",
+    description:
+      "Helping drive enquiries with ad + content alignment, landing page direction, and consistent optimisation for quality leads.",
+  },
+  {
+    title: "Designing Creatives (Canva / Photoshop)",
+    description:
+      "Designing marketing posters and creatives for ads and social — clean layouts, strong hooks, and brand-friendly visuals.",
+  },
+];
+
 export const companies = [
   {
     name: "Viva Smart Care",
     logo: "/images/companies/viva-smart-care.png",
-    tagline: "Bring Care to Every Connection",
+    tagline: "Social media • Meta Ads • Google Business Profile",
+    logoBg: "light",
+  },
+  {
+    name: "Fit With Sajas",
+    logo: "/images/companies/fit-with-sajas.png",
+    tagline: "Social media management & content",
     logoBg: "light",
   },
   {
     name: "UNIQ OUT",
     logo: "/images/companies/uniq-out.png",
-    tagline: "Brand & digital presence",
+    tagline: "Social media • Meta Ads • Google Business Profile",
     logoBg: "dark",
   },
   {
     name: "Zoople Technologies",
-    logo: null,
-    tagline: "Digital solutions & marketing",
-    logoBg: "brand",
+    logo: "/images/companies/zoople.png",
+    tagline: "Dream • Learn • Achieve",
+    logoBg: "dark",
   },
 ];
 
@@ -106,23 +191,23 @@ export const experience = {
   company: "Zoople Technologies",
   period: "December 2025",
   summary:
-    "At Zoople Technologies, I got hands-on with every layer of digital marketing — from writing the first line of ad copy to analyzing campaign numbers at the end of the week. It was fast-paced, real-world work where every task connected directly to a brand's growth.",
+    "At Zoople Technologies, I supported real client campaigns end-to-end — managing social media, running Meta Ads, maintaining Google Business Profiles, improving search visibility, and tracking performance to help the team make smarter marketing decisions.",
   highlights: [
     {
       title: "Content That Connects",
-      text: "Wrote and edited blogs, social captions, ad copy, and email campaigns — making sure every piece had a clear purpose and a strong voice behind it.",
+      text: "Created blogs, social captions, ad copy, and email drafts — built to engage, guide, and convert.",
     },
     {
       title: "Live Ad Campaigns",
-      text: "Built and launched real Meta Ads campaigns, learning how to target audiences, manage budgets, and optimize for better performance on the fly.",
+      text: "Launched Meta Ads and learned hands-on optimization: audiences, creatives, budgets, and performance improvements.",
     },
     {
       title: "SEO & Local Growth",
-      text: "Conducted keyword research, built backlinks through outreach and guest posting, and managed Google Business profiles to boost local visibility and search rankings.",
+      text: "Worked on SEO basics (keywords, backlinks) and improved local visibility via Google Business Profile updates and reviews.",
     },
     {
       title: "Insights That Drive Action",
-      text: "Tracked performance through Google Analytics, ran competitor research, and turned raw numbers into recommendations the team could act on immediately.",
+      text: "Tracked results in Google Analytics, checked competitors, and shared quick insights the team could act on.",
     },
   ],
 };
