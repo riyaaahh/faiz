@@ -22,7 +22,7 @@ export default function WorkExperience() {
           <p className="mb-8 text-center text-xs font-bold uppercase tracking-[0.25em] text-muted">
             Companies I've Worked With
           </p>
-          <StaggerContainer className="mx-auto grid max-w-4xl gap-5 sm:grid-cols-3">
+          <StaggerContainer className="mx-auto grid max-w-3xl gap-5 sm:grid-cols-2">
             {companies.map((company) => (
               <StaggerItem key={company.name}>
                 <GlowCard className="flex h-full flex-col items-center p-6 text-center">

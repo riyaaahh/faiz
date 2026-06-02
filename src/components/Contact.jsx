@@ -13,15 +13,15 @@ export default function Contact() {
           subtitle="Whether it's a full campaign, a quick consultation, or a new role — I'd love to hear from you."
         />
 
-        <div className="grid gap-8 lg:grid-cols-5">
+        <div className="grid items-stretch gap-8 lg:grid-cols-5">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-            className="lg:col-span-2"
+            className="h-full lg:col-span-2"
           >
-            <GlowCard className="glass-accent h-full p-8">
+            <GlowCard className="glass-accent flex h-full flex-col p-8">
               <h3 className="font-display text-2xl font-bold text-white">Let's Connect</h3>
               <p className="mt-3 text-muted">
                 Drop me a message and I'll get back to you as soon as I can. Based in Thrissur,
@@ -113,10 +113,11 @@ export default function Contact() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-            className="lg:col-span-3"
+            className="h-full lg:col-span-3"
           >
-            <GlowCard className="p-8 md:p-10">
+            <GlowCard className="flex h-full flex-col p-8 md:p-10">
               <form
+                className="flex h-full flex-col"
                 onSubmit={(e) => {
                   e.preventDefault();
                   const form = e.target;
@@ -146,16 +147,15 @@ export default function Contact() {
                     </div>
                   ))}
                 </div>
-                <div className="mt-6">
+                <div className="mt-6 flex min-h-0 flex-1 flex-col">
                   <label htmlFor="message" className="mb-2 block text-sm font-semibold text-muted">
                     Your Message
                   </label>
                   <textarea
                     id="message"
                     name="message"
-                    rows={5}
                     required
-                    className="input-field w-full resize-none rounded-xl px-4 py-3.5 text-white placeholder:text-muted/40"
+                    className="input-field min-h-[140px] w-full flex-1 resize-none rounded-xl px-4 py-3.5 text-white placeholder:text-muted/40"
                     placeholder="What's on your mind?"
                   />
                 </div>
@@ -163,7 +163,7 @@ export default function Contact() {
                   type="submit"
                   whileHover={{ scale: 1.03, y: -2 }}
                   whileTap={{ scale: 0.97 }}
-                  className="btn-primary relative mt-8 flex w-full items-center justify-center gap-2 rounded-2xl py-4 text-sm font-bold text-black sm:w-auto sm:px-12"
+                  className="btn-primary relative mt-8 flex w-full shrink-0 items-center justify-center gap-2 rounded-2xl py-4 text-sm font-bold text-black sm:w-auto sm:px-12"
                 >
                   <Send size={18} />
                   Send Message
