@@ -158,8 +158,8 @@ export default function Hero() {
                 transition={{ delay: 1.4, type: "spring" }}
                 className="absolute -right-2 top-12 glass rounded-2xl px-4 py-3 md:-right-6"
               >
-                <p className="text-sm font-bold text-white">SEO · Ads · Content</p>
-                <p className="text-xs text-muted">Full-stack marketer</p>
+                <p className="text-sm font-bold text-white">Social Media · Content · Meta Ads</p>
+                <p className="text-xs text-white">SMM-first growth</p>
               </motion.div>
             </div>
           </motion.div>

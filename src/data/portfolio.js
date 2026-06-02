@@ -1,17 +1,17 @@
 export const profile = {
   name: "Mohammed Faiz",
-  title: "Digital Marketing Executive",
+  title: "Social Media Marketing Specialist",
   location: "Thrissur, Chettuva",
   email: "mohammedfaiz7424@gmail.com",
   phone: "+91 7736 83 7424",
-  tagline: "I help brands get seen, get clicks, and get results.",
+  tagline: "I help brands grow with social media marketing.",
   heroDescription:
-    "From scroll-stopping content to high-converting ad campaigns — I blend creativity with analytics to grow your online presence and bring in leads that actually matter.",
+    "I create scroll-stopping social content, manage consistent posting, and run performance-focused campaigns — so brands get attention, engagement, and leads that actually matter.",
   about: {
     intro:
       "I'm a digital marketer based in Thrissur who believes great marketing isn't just about being loud — it's about being smart.",
     body:
-      "Whether it's crafting a reel that stops the scroll, fine-tuning a Meta ad for better ROAS, or climbing search rankings through solid SEO — I focus on strategies that move the needle. I love turning raw data into clear decisions and watching campaigns go from idea to impact.",
+      "My strongest lane is Social Media Marketing — building content that people want to watch, follow, and share. I also support it with smart paid campaigns, strong creatives, and clear reporting so every post and ad has a purpose. I love turning raw data into simple decisions and watching campaigns go from idea to impact.",
     closing:
       "Currently sharpening my skills at Zoople Technologies, I'm always looking for new challenges where I can help brands tell better stories and grow faster online.",
   },
@@ -82,25 +82,55 @@ export const strengths = [
 ];
 
 export const tools = [
+  "Canva",
+  "Photoshop",
   "Meta Ads",
-  "Google Ads",
+  "Google Business Profile",
   "Google Analytics",
   "Google Search Console",
-  "Google Business Profile",
+  "Google Ads",
   "Semrush",
   "HubSpot",
   "WordPress",
-  "Canva",
-  "Photoshop",
   "Email Marketing",
   "Keyword Research",
 ];
 
 export const technicalSkills = [
   {
-    title: "SEO (On‑Page & Off‑Page)",
+    title: "Social Media Marketing (Strategy & Management)",
     description:
-      "Optimising pages for search visibility — from keywords and content structure to internal linking, backlink support, and overall site relevance.",
+      "Planning and managing content calendars, trends, and posting — keeping the brand consistent while improving engagement and growth.",
+  },
+  {
+    title: "Content Planning & Creation (Posts, Reels, Stories)",
+    description:
+      "Creating social content with a clear hook and structure — built for watch time, saves, shares, and action.",
+  },
+  {
+    title: "Copywriting (Captions, Ads, CTAs)",
+    description:
+      "Writing clear, persuasive copy — strong hooks, captions, and ad text designed to drive clicks and enquiries.",
+  },
+  {
+    title: "Designing Creatives (Canva / Photoshop)",
+    description:
+      "Designing posters and creatives for social + ads — clean layouts, strong contrast, and brand-friendly visuals.",
+  },
+  {
+    title: "Meta Ads (Campaign Setup & Optimisation)",
+    description:
+      "Building and monitoring campaigns — audience targeting, creative testing, budget control, and iteration based on performance signals.",
+  },
+  {
+    title: "Analytics & Reporting (Google Analytics)",
+    description:
+      "Tracking performance and turning numbers into decisions — reporting, pattern spotting, and next-step recommendations.",
+  },
+  {
+    title: "Lead Generation & Funnel Support",
+    description:
+      "Driving enquiries with content + ad alignment, landing page direction, and consistent optimisation for quality leads.",
   },
   {
     title: "Local SEO & Google Business Profile",
@@ -108,34 +138,9 @@ export const technicalSkills = [
       "Improving map visibility through Google Business Profile optimisation, accurate updates, review posting/management, and local trust signals.",
   },
   {
-    title: "Keyword Research & Competitor Analysis",
+    title: "SEO (On‑Page & Off‑Page)",
     description:
-      "Finding high-intent search opportunities and analysing competitors to plan content and campaigns that can realistically win traffic.",
-  },
-  {
-    title: "Meta Ads (Campaign Setup & Optimisation)",
-    description:
-      "Building and monitoring live campaigns — audience targeting, creative testing, budget control, and iteration based on performance signals.",
-  },
-  {
-    title: "Google Ads (Search & Lead Focused)",
-    description:
-      "Planning campaigns for lead generation with practical tracking and optimisation — keeping intent, cost, and results aligned.",
-  },
-  {
-    title: "Content Planning & Creation",
-    description:
-      "Creating posts, reels, stories, and blogs with a clear strategy — brand consistency, audience relevance, and performance-led storytelling.",
-  },
-  {
-    title: "Copywriting (Ads, Captions, Emails)",
-    description:
-      "Writing clear, persuasive copy — headlines, CTAs, ad text, captions, and email content designed to drive clicks and action.",
-  },
-  {
-    title: "Backlink Building & Analysis",
-    description:
-      "Supporting SEO with outreach, guest posting, directory submissions, and backlink checks to strengthen authority over time.",
+      "Optimising pages for search visibility — from keywords and content structure to internal linking, backlink support, and overall site relevance.",
   },
   {
     title: "Google Search Console",
@@ -143,19 +148,19 @@ export const technicalSkills = [
       "Monitoring search performance and spotting quick wins using query data, indexing insights, and page-level improvements.",
   },
   {
-    title: "Analytics & Reporting (Google Analytics)",
+    title: "Keyword Research & Competitor Analysis",
     description:
-      "Tracking performance and turning numbers into decisions — basic reporting, pattern spotting, and actionable insights for next steps.",
+      "Finding high-intent opportunities and analysing competitors to plan content and campaigns that can realistically win traffic.",
   },
   {
-    title: "Lead Generation & Funnel Support",
+    title: "Backlink Building & Analysis",
     description:
-      "Helping drive enquiries with ad + content alignment, landing page direction, and consistent optimisation for quality leads.",
+      "Supporting SEO with outreach, guest posting, directory submissions, and backlink checks to strengthen authority over time.",
   },
   {
-    title: "Designing Creatives (Canva / Photoshop)",
+    title: "Google Ads (Search & Lead Focused)",
     description:
-      "Designing marketing posters and creatives for ads and social — clean layouts, strong hooks, and brand-friendly visuals.",
+      "Planning campaigns for lead generation with practical tracking and optimisation — keeping intent, cost, and results aligned.",
   },
 ];
 

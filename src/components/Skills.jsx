@@ -23,18 +23,19 @@ import { expertise, strengths, focusAreas, tools, technicalSkills } from "../dat
 const areaIcons = [Megaphone, Search, PenTool, BarChart3];
 
 const technicalSkillIcons = [
-  Search,
-  MapPin,
-  Target,
   Megaphone,
-  MousePointerClick,
   Calendar,
   PenTool,
-  Link2,
-  LineChart,
+  Palette,
+  MousePointerClick,
   BarChart3,
   UserPlus,
-  Palette,
+  MapPin,
+  Search,
+  LineChart,
+  Target,
+  Link2,
+  MousePointerClick,
 ];
 
 const toolIcons = {
