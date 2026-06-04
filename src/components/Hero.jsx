@@ -155,11 +155,20 @@ export default function Hero() {
               <motion.div
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
+                whileHover={{ y: -4, scale: 1.02 }}
                 transition={{ delay: 1.4, type: "spring" }}
-                className="absolute -right-2 top-12 glass rounded-2xl px-4 py-3 md:-right-6"
+                className="absolute -top-4 -right-4 glass rounded-2xl p-3 w-[130px] md:w-auto md:px-5 md:py-3.5 md:-top-8 md:-right-8 cursor-default"
               >
-                <p className="text-sm font-bold text-white">Social Media · Content · Meta Ads</p>
-                <p className="text-xs text-white">SMM-first growth</p>
+                <div className="flex flex-col gap-1 md:flex-row md:items-center md:gap-2.5 text-[11px] font-bold text-white md:text-sm md:tracking-wide leading-tight">
+                  <span>Social Media</span>
+                  <span className="hidden md:block w-1 h-1 rounded-full bg-white/20 shrink-0" />
+                  <span>Content</span>
+                  <span className="hidden md:block w-1 h-1 rounded-full bg-white/20 shrink-0" />
+                  <span>Meta Ads</span>
+                </div>
+                <p className="mt-1.5 text-[8px] font-bold uppercase tracking-[0.18em] text-white/40 md:text-[10px] md:mt-2">
+                  SMM-first growth
+                </p>
               </motion.div>
             </div>
           </motion.div>
