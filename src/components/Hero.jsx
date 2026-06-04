@@ -34,7 +34,7 @@ export default function Hero() {
               transition={{ delay: 0.2 }}
               className="text-xs font-bold uppercase tracking-[0.3em] text-muted"
             >
-              Hi, I'm {profile.name.split(" ")[0]}
+              Hi, I'm {profile.name}
             </motion.p>
 
             <h1 className="mt-4 font-display text-[2.5rem] font-black leading-[1.05] tracking-tight text-white sm:text-5xl lg:text-6xl xl:text-[4.5rem]">
