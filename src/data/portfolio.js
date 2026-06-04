@@ -230,6 +230,10 @@ export const certifications = [
     name: "HubSpot",
     detail: "Certified in inbound marketing, content strategy, and lead nurturing.",
   },
+  {
+    name: "Zoople Technologies",
+    detail: "Digital Marketing Specialist Certification covering SEO, social, and search ads.",
+  },
 ];
 
 export const languages = [
@@ -247,7 +251,7 @@ export const reference = {
 
 export const stats = [
   { value: "4", label: "Core Specializations" },
-  { value: "3", label: "Industry Certifications" },
+  { value: "4", label: "Industry Certifications" },
   { value: "10+", label: "Campaign Tools Mastered" },
   { value: "2", label: "Languages Spoken" },
 ];
