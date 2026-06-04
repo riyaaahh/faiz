@@ -19,9 +19,9 @@ export default function About() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-            className="lg:col-span-7"
+            className="lg:col-span-7 lg:flex lg:flex-col"
           >
-            <GlowCard className="p-8 md:p-10">
+            <GlowCard className="p-8 md:p-10 lg:h-full lg:flex lg:flex-col">
               <div className="mb-6 flex items-center gap-3">
                 <span className="h-1.5 w-1.5 rounded-full bg-white" />
                 <p className="text-xs font-bold uppercase tracking-[0.28em] text-muted">
@@ -48,7 +48,7 @@ export default function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.2 }}
-                className="mt-8 grid gap-3 sm:grid-cols-3"
+                className="mt-auto pt-8 grid gap-3 sm:grid-cols-3"
               >
                 {[
                   { label: "Based in", value: profile.location },
