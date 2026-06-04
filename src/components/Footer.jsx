@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { Heart } from "lucide-react";
 import { profile } from "../data/portfolio";
 
 export default function Footer() {
@@ -14,10 +13,9 @@ export default function Footer() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="flex items-center gap-1.5 text-sm text-muted"
+          className="text-sm text-muted"
         >
-          © {year} {profile.name}. Crafted with{" "}
-          <Heart size={14} className="fill-white text-white" /> in Thrissur.
+          © 2026 Mohammed Faiz | Social Media Marketer
         </motion.p>
         <motion.div
           initial={{ opacity: 0 }}
