@@ -27,6 +27,7 @@ export default function Footer() {
           {[
             { label: "About", href: "#about" },
             { label: "Skills", href: "#skills" },
+            { label: "Work", href: "#work" },
             { label: "Contact", href: "#contact" },
           ].map((link) => (
             <a key={link.href} href={link.href} className="transition-colors hover:text-white">

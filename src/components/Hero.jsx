@@ -74,7 +74,7 @@ export default function Hero() {
                 Start a Project
               </motion.a>
               <motion.a
-                href="#about"
+                href="#work"
                 whileHover={{ scale: 1.04, y: -2 }}
                 whileTap={{ scale: 0.97 }}
                 className="btn-ghost rounded-2xl px-8 py-4 text-sm font-semibold text-white"

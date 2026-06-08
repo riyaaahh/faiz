@@ -1,3 +1,6 @@
+import vid1 from "../assets/vid1.mp4";
+import vid2 from "../assets/vid2.mp4";
+
 export const profile = {
   name: "Mohammed Faiz",
   title: "Social Media Marketing Specialist",
@@ -25,8 +28,156 @@ export const profile = {
 export const navLinks = [
   { label: "About", href: "#about" },
   { label: "What I Do", href: "#skills" },
+  { label: "Work", href: "#work" },
   { label: "Experience", href: "#experience" },
   { label: "Contact", href: "#contact" },
+];
+
+export const workCategories = [
+  { id: "all", label: "All Work" },
+  { id: "video", label: "Video & Reels" },
+  { id: "social", label: "Social Media" },
+  { id: "recruitment", label: "Recruitment" },
+  { id: "branding", label: "Branding" },
+  { id: "festive", label: "Festive" },
+  { id: "travel", label: "Travel" },
+];
+
+export const creativeWorks = [
+  {
+    id: "reel-promo-1",
+    type: "video",
+    title: "Brand Promo Reel",
+    client: "Social Media Campaign",
+    category: "video",
+    tags: ["Reel", "Video Edit"],
+    video: vid1,
+    description:
+      "Short-form reel with strong hooks, pacing, and on-brand visuals — built to drive engagement on Instagram and Facebook.",
+    accent: "#a855f7",
+  },
+  {
+    id: "reel-promo-2",
+    type: "video",
+    title: "Promotional Video Edit",
+    client: "Social Media Campaign",
+    category: "video",
+    tags: ["Promo", "Reels"],
+    video: vid2,
+    description:
+      "Promotional video edit with clear messaging, transitions, and CTA framing — optimized for reels and stories.",
+    accent: "#f97316",
+  },
+  {
+    id: "viva-hiring",
+    title: "We're Hiring — Accountant",
+    client: "Viva Smart Care",
+    category: "recruitment",
+    tags: ["Poster Design", "Hiring"],
+    image: "/images/works/viva-hiring-accountant.png",
+    description:
+      "Clean recruitment poster with bold typography and clear contact details for a local service brand.",
+    accent: "#facc15",
+  },
+  {
+    id: "viva-storage",
+    title: "iPhone Storage Upgrade",
+    client: "Viva Smart Care",
+    category: "social",
+    tags: ["Malayalam", "Service Promo"],
+    image: "/images/works/viva-storage-upgrade.png",
+    description:
+      "Bilingual service creative highlighting fast, safe storage upgrades with product-focused visuals.",
+    accent: "#3b82f6",
+  },
+  {
+    id: "uniqout-hoodies",
+    title: "Hoodies Sale — Up to 70% Off",
+    client: "UNIQ OUT",
+    category: "social",
+    tags: ["Fashion", "Sale Promo"],
+    image: "/images/works/uniqout-hoodies.png",
+    description:
+      "High-contrast streetwear promo with distressed typography and a bold discount call-to-action.",
+    accent: "#eab308",
+  },
+  {
+    id: "uniqout-hiring",
+    title: "We're Hiring — Sales Staff",
+    client: "UNIQ OUT",
+    category: "recruitment",
+    tags: ["Retail", "Hiring"],
+    image: "/images/works/uniqout-hiring.png",
+    description:
+      "Vibrant blue-and-yellow hiring graphic with role requirements and location details.",
+    accent: "#2563eb",
+  },
+  {
+    id: "fit-sajas-christmas",
+    title: "Christmas Fitness Tips",
+    client: "Fit With Sajas",
+    category: "social",
+    tags: ["Health", "Seasonal"],
+    image: "/images/works/fit-with-sajas-christmas.png",
+    description:
+      "Festive health tips carousel-style creative with actionable calorie-tracking advice.",
+    accent: "#16a34a",
+  },
+  {
+    id: "challengers-vishu",
+    title: "Vishu Greetings",
+    client: "Challengers Arts & Sports Club",
+    category: "festive",
+    tags: ["Malayalam", "Festival"],
+    image: "/images/works/challengers-vishu.png",
+    description:
+      "Traditional Vishu wishes blending Kanikkonna florals with bilingual Malayalam typography.",
+    accent: "#ca8a04",
+  },
+  {
+    id: "sportic-logo",
+    title: "Brand Logo Mockup",
+    client: "Sportic Sports Hub",
+    category: "branding",
+    tags: ["Logo", "Identity"],
+    image: "/images/works/sportic-logo.png",
+    description:
+      "Embossed logo presentation for a sports hub — clean type, geometric icon, premium feel.",
+    accent: "#38bdf8",
+  },
+  {
+    id: "metahire-germany",
+    title: "Germany Job Opportunity",
+    client: "MetaHire Solutions",
+    category: "recruitment",
+    tags: ["International", "Flyer"],
+    image: "/images/works/metahire-germany.png",
+    description:
+      "Information-rich recruitment flyer for overseas placement with salary, process, and contact details.",
+    accent: "#1d4ed8",
+  },
+  {
+    id: "kerala-travel",
+    title: "Kerala Explore Package",
+    client: "Airspace Travel",
+    category: "travel",
+    tags: ["Tourism", "Package Promo"],
+    image: "/images/works/kerala-travel.png",
+    description:
+      "Travel package creative with pricing, inclusions, and scenic Kerala imagery.",
+    accent: "#fbbf24",
+  },
+  {
+    id: "waffle-date",
+    title: "Grand Opening Flyer",
+    client: "Waffle Date",
+    category: "social",
+    tags: ["Food", "Event Launch"],
+    image: "/images/works/waffle-date-opening.png",
+    description:
+      "Warm, appetizing grand-opening design with ribbon accents and event details.",
+    accent: "#dc2626",
+  },
 ];
 
 export const expertise = [

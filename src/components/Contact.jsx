@@ -1,9 +1,53 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { Mail, MapPin, Phone, Send, User } from "lucide-react";
+import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
 import AnimatedSection, { SectionHeading, GlowCard } from "./ui";
 import { profile, reference } from "../data/portfolio";
 
 export default function Contact() {
+  const [isSending, setIsSending] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const name = form.name.value;
+    const email = form.email.value;
+    const message = form.message.value;
+
+    setIsSending(true);
+
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID || "YOUR_SERVICE_ID";
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || "YOUR_TEMPLATE_ID";
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || "YOUR_PUBLIC_KEY";
+
+    emailjs
+      .send(
+        serviceId,
+        templateId,
+        {
+          name,
+          from_name: name,
+          email,
+          reply_to: email,
+          message,
+        },
+        publicKey
+      )
+      .then(() => {
+        toast.success("Thanks for reaching out! I'll get back to you within 24 hours.");
+        form.reset();
+      })
+      .catch((error) => {
+        console.error("EmailJS Error:", error);
+        toast.error("Something went wrong. Please try again or contact me via WhatsApp.");
+      })
+      .finally(() => {
+        setIsSending(false);
+      });
+  };
+
   return (
     <AnimatedSection id="contact" className="relative py-28 md:py-36">
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
@@ -57,7 +101,7 @@ export default function Contact() {
                         className="group flex items-center gap-4 rounded-xl p-2 transition-colors hover:bg-white/[0.03]"
                       >
                         <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-accent/15 transition-transform group-hover:scale-110">
-                          <item.icon size={18} className="text-accent-light" />
+                           <item.icon size={18} className="text-accent-light" />
                         </div>
                         <div>
                           <p className="text-xs font-bold uppercase tracking-wider text-muted">
@@ -116,14 +160,7 @@ export default function Contact() {
             className="h-full lg:col-span-3"
           >
             <GlowCard className="flex h-full flex-col p-8 md:p-10">
-              <form
-                className="flex h-full flex-col"
-                onSubmit={(e) => {
-                  e.preventDefault();
-                  const form = e.target;
-                  window.location.href = `mailto:${profile.email}?subject=Portfolio Inquiry from ${form.name.value}&body=${encodeURIComponent(form.message.value)}%0A%0AFrom: ${form.email.value}`;
-                }}
-              >
+              <form className="flex h-full flex-col" onSubmit={handleSubmit}>
                 <p className="mb-8 text-sm text-muted">
                   Tell me about your project — I'll reply personally within 24 hours.
                 </p>
@@ -161,12 +198,15 @@ export default function Contact() {
                 </div>
                 <motion.button
                   type="submit"
-                  whileHover={{ scale: 1.03, y: -2 }}
-                  whileTap={{ scale: 0.97 }}
-                  className="btn-primary relative mt-8 flex w-full shrink-0 items-center justify-center gap-2 rounded-2xl py-4 text-sm font-bold text-black sm:w-auto sm:px-12"
+                  disabled={isSending}
+                  whileHover={isSending ? {} : { scale: 1.03, y: -2 }}
+                  whileTap={isSending ? {} : { scale: 0.97 }}
+                  className={`btn-primary relative mt-8 flex w-full shrink-0 items-center justify-center gap-2 rounded-2xl py-4 text-sm font-bold sm:w-auto sm:px-12 ${
+                    isSending ? "opacity-50 cursor-not-allowed bg-white/50 text-black/50" : "text-black"
+                  }`}
                 >
-                  <Send size={18} />
-                  Send Message
+                  <Send size={18} className={isSending ? "animate-pulse" : ""} />
+                  {isSending ? "Sending..." : "Send Message"}
                 </motion.button>
               </form>
             </GlowCard>
