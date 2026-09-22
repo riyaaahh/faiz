@@ -178,6 +178,30 @@ export const creativeWorks = [
       "Warm, appetizing grand-opening design with ribbon accents and event details.",
     accent: "#dc2626",
   },
+  {
+    id: "karthik-bhavan",
+    title: "Social Media & Video Editing",
+    client: "Karthik Bhavan",
+    category: "social",
+    tags: ["Social Media", "Video Edit", "Reels"],
+    image: "/images/works/karthik-bhavan.png",
+    fit: "contain",
+    description:
+      "Social media handling and video editing for a pure vegetarian restaurant — content planning, posting, and reels built to engage and convert.",
+    accent: "#32CD32",
+  },
+  {
+    id: "toni-guy-video",
+    title: "Video Editing",
+    client: "TONI&GUY Hairdressing Guruvayur",
+    category: "video",
+    tags: ["Video Edit", "Salon"],
+    image: "/images/works/toni-and-guy.png",
+    fit: "contain",
+    description:
+      "Video editing for Toni & Guy Guruvayur — clean, premium cuts for salon reels and promotional content.",
+    accent: "#ffffff",
+  },
 ];
 
 export const expertise = [
@@ -332,6 +356,18 @@ export const companies = [
     name: "UNIQ OUT",
     logo: "/images/companies/uniq-out.png",
     tagline: "Social media • Meta Ads • Google Business Profile",
+    logoBg: "dark",
+  },
+  {
+    name: "Karthik Bhavan",
+    logo: "/images/companies/karthik-bhavan.png",
+    tagline: "Social media handling • Video editing",
+    logoBg: "dark",
+  },
+  {
+    name: "TONI&GUY Guruvayur",
+    logo: "/images/companies/toni-and-guy.png",
+    tagline: "Video editing",
     logoBg: "dark",
   },
   {

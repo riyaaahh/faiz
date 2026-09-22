@@ -4,6 +4,11 @@ import { useRef } from "react";
 import { RevealText } from "./ui";
 import { profile, stats } from "../data/portfolio";
 
+function scrollToSection(e, sectionId) {
+  e.preventDefault();
+  document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
 export default function Hero() {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end start"] });
@@ -75,6 +80,7 @@ export default function Hero() {
               </motion.a>
               <motion.a
                 href="#work"
+                onClick={(e) => scrollToSection(e, "work")}
                 whileHover={{ scale: 1.04, y: -2 }}
                 whileTap={{ scale: 0.97 }}
                 className="btn-ghost rounded-2xl px-8 py-4 text-sm font-semibold text-white"
@@ -204,12 +210,13 @@ export default function Hero() {
       </motion.div>
 
       <motion.a
-        href="#about"
+        href="#work"
+        onClick={(e) => scrollToSection(e, "work")}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 2.2 }}
         className="absolute bottom-10 left-1/2 flex -translate-x-1/2 flex-col items-center gap-2"
-        aria-label="Scroll down"
+        aria-label="View creative portfolio"
       >
         <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-muted">Explore</span>
         <motion.div

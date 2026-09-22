@@ -8,6 +8,7 @@ const ease = [0.22, 1, 0.36, 1];
 
 function WorkMedia({ work, className = "", preview = false }) {
   const videoRef = useRef(null);
+  const fitClass = work.fit === "contain" ? "object-contain bg-black p-6" : "object-cover";
 
   const handleMouseEnter = () => {
     if (preview && videoRef.current) {
@@ -33,7 +34,7 @@ function WorkMedia({ work, className = "", preview = false }) {
         preload="metadata"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
-        className={className}
+        className={`${fitClass} ${className}`}
       />
     );
   }
@@ -43,7 +44,7 @@ function WorkMedia({ work, className = "", preview = false }) {
       src={work.image}
       alt={work.title}
       loading="lazy"
-      className={className}
+      className={`${fitClass} ${className}`}
     />
   );
 }
@@ -63,7 +64,7 @@ function WorkCard({ work, onOpen }) {
         <WorkMedia
           work={work}
           preview={isVideo}
-          className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+          className="h-full w-full transition-transform duration-700 ease-out group-hover:scale-105"
         />
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-80 transition-opacity duration-500 group-hover:opacity-95" />
 
@@ -167,7 +168,11 @@ function Lightbox({ work, onClose }) {
               className="block h-auto w-full object-contain"
             />
           ) : (
-            <img src={work.image} alt={work.title} className="block h-auto w-full object-contain" />
+            <img
+              src={work.image}
+              alt={work.title}
+              className={`block h-auto w-full ${work.fit === "contain" ? "object-contain p-8" : "object-contain"}`}
+            />
           )}
         </div>
 
@@ -210,7 +215,7 @@ export default function CreativeWork() {
       : creativeWorks.filter((w) => w.category === activeCategory);
 
   return (
-    <AnimatedSection id="work" alt className="relative py-28 md:py-36">
+    <AnimatedSection id="work" alt className="relative scroll-mt-24 py-28 md:scroll-mt-28 md:py-36">
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent via-white/[0.015] to-transparent" />
 
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
