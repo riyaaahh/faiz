@@ -154,7 +154,7 @@ export default function Hero() {
                 transition={{ delay: 1.2, type: "spring" }}
                 className="absolute -bottom-4 -left-4 glass-accent rounded-2xl px-5 py-4 md:-left-8"
               >
-                <p className="font-display text-3xl font-black gradient-text-static">3+</p>
+                <p className="font-display text-3xl font-black gradient-text-static">6+</p>
                 <p className="text-xs font-medium text-muted">Brands Worked With</p>
               </motion.div>
 
